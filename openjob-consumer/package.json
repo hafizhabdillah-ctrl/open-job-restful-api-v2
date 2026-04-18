@@ -1,0 +1,39 @@
+{
+  "name": "submission",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "nodemon ./src/server.js",
+    "start": "nodemon ./src/server.js",
+    "consumer": "node ./src/index.js",
+    "migrate": "node-pg-migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^1.0.3",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "joi": "^18.1.2",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.1.1",
+    "nanoid": "^5.1.7",
+    "node-pg-migrate": "^8.0.4",
+    "nodemailer": "^8.0.5",
+    "pg": "^8.20.0",
+    "redis": "^5.12.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "eslint-config-dicodingacademy": "^0.9.5",
+    "globals": "^17.4.0",
+    "newman": "^6.2.2",
+    "nodemon": "^3.1.14"
+  }
+}
